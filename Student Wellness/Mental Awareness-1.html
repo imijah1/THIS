@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the head section where you can include metadata -->
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="mentalawareness-2.css"> <!-- Linking an external stylesheet -->
+    <style>
+        /* Additional styles for the photo and arrows */
+        #photo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #arrow-left, #arrow-right {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .logo {
+            max-width: 100px; /* Set the maximum width of the logo */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the body of your webpage -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="lotus-human-wellness-logo-free-vector.jpg" class="logo"> <!-- Adding a logo image -->
+            <ul>
+                <li><a href="Serenity-1.html">HOME</a></li> <!-- Navigation link to HOME -->
+                <li><a href="WellnessSolutions-1.html">Wellness Solutions</a></li> <!-- Navigation link to Project Management -->
+                <li><a href="Signup.html">Sign Up</a></li> <!-- Navigation link to Skills Required -->
+                <li><a href="https://www.kean.edu/">Kean Website</a></li> <!-- Navigation link to Contact Us -->
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Did You Know?</h1> <!-- Main heading -->
+            <br>
+            <p><b>According to college student mental health statistics, around 1,100 US college students commit suicide every year and 24,000 attempt to take their lives.
+
+                College students are exposed to a lot of pressure and stress, which negatively impacts their mental health. 
+                In the past decade, the number of students treated for mental disorders has been on the rise. 
+                Experts confirm that things have worsened since the COVID-19 pandemic started.</b></p> <!-- Course section -->
+
+            <p><b> Mental Health Awareness for Students is Very Important</b></p> <!-- Author's name -->
+            <div>
+                <a href="https://www.usnews.com/education/best-colleges/articles/stress-in-college-students-what-to-know#:~:text=In%20a%20Gallup%20poll%20that,semester%2C%20according%20to%20findings%20in" target="_blank">
+                    <button type="button"><span></span>More Info</button> <!-- Button to get more info -->
+                </a>
+                <a href="Signup.html" target="_blank">
+                    <button type="button"><span></span>Resources</button> <!-- Button to follow the author on LinkedIn -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inserted photo section -->
+<div id="photo-container">
+    <img src="Graphs.png" alt="Support Systems are very important. This graph displays percentages of who students considered to be their support system.">
+    <img src="graph.png" alt="Bar graph demonstrating percentages for various emotions felt by students.">
+    <img src="stats.png" alt="This displays stats for mental health overall.">
+
+    <br>
+    <span id="arrow-left" onclick="changePhoto(-1)">←</span>
+    <span id="arrow-right" onclick="changePhoto(1)">→</span>
+</div>
+
+
+    <!-- JavaScript for changing photos with arrows -->
+    <script>
+        var currentPhotoIndex = 0;
+        var photoSources = ["Graphs.png", "graph.jpg", "stats.jpg"];
+
+        function changePhoto(direction) {
+            currentPhotoIndex += direction;
+            if (currentPhotoIndex < 0) {
+                currentPhotoIndex = photoSources.length - 1;
+            } else if (currentPhotoIndex >= photoSources.length) {
+                currentPhotoIndex = 0;
+            }
+
+            var photoElement = document.querySelector("#photo-container img");
+            photoElement.src = photoSources[currentPhotoIndex];
+        }
+    </script>
+</body>
+</html>

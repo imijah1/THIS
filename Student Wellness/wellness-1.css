@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bellagio-spa-suite_VEGASSPA1022-7b28e71ea6ba46e798dac1975937e2ef.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(23, 23, 23, 0.8);
+    color: #fff; /* White color for text */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo-text {
+    color: #fff; /* White color for the logo text */
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.banner {
+    padding-top: 20px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #faf0f0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #a99fc6f1;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center-align text */
+    padding: 20px;
+}
+
+.content h1 {
+    margin-top: 20px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff; /* Adding a border line below paragraphs */
+    padding-bottom: 10px; /* Adding padding below paragraphs */
+}
+
+.register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e877f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.register-button:hover {
+    background-color: rgb(69, 146, 160);
+}
+
+.bottom-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+audio {
+    margin-top: 20px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity</title>
+    <link rel="stylesheet" href="Serenity-1.css"> <!-- Linking an external stylesheet -->
+    <link rel="stylesheet" href="SignIn.css"> <!-- Linking an external stylesheet -->
+</head>
+
+<body>
+    <!-- This is the body of your webpage -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="lotus-human-wellness-logo-free-vector.jpg" class="logo"> <!-- Adding a logo image -->
+            <ul>
+                <li><a href="Serenity-1.html">HOME</a></li>
+                <li><a href="Mental Awareness-1.html">Student Mental Awareness</a></li>
+                <li><a href="WellnessSolutions-1.html">Wellness Center</a></li>
+                <li><a href="Signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <!-- Thanks page content -->
+        <div class="thanks-page">
+            <h1>Thank you for filling out the form correctly.</h1>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(Aire-spa-london-oct21-pr.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0; /* Align to the left */
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+        margin-right: 50px; /* Adjusted margin to move the logo slightly to the right */
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin-left: auto; /* Push the menu to the right */
+    }
+
+    .navbar ul li {
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: #8d7ac1f1;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+    .thanks-page {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .thanks-page h1 {
+        font-size: 70px;
+        margin-top: 50px;
+    }
+</style>
