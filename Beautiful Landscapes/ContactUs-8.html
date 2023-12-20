@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Declaration of the document type as HTML5 -->
+<html lang="en"> <!-- Opening of the HTML document with language attribute 'en' (English) -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Declaring character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting viewport for responsive design -->
+    <title>User Information Form</title> <!-- Setting the title of the page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Linking an external stylesheet -->
+    <link rel="stylesheet" href="Style-7.css"> <!-- Linking another external stylesheet -->
+    <style>
+        .centered {
+            display: flex; /* Using flexbox for centering */
+            justify-content: center; /* Centering horizontally */
+            align-items: center; /* Centering vertically */
+            height: 100vh; /* Setting height to 100 viewport height units */
+        }
+    </style> <!-- Adding internal CSS style for centering -->
+</head>
+
+<body> <!-- Opening of the body section -->
+
+    <div class="banner"> <!-- Starting of the banner section -->
+        <div class="navbar"> <!-- Starting of the navigation bar -->
+            <ul>
+                <li><a href="index.html">HOME</a></li> <!-- Navigation link to HOME -->
+                <li><a href="projectmanagement-1.html">PROJECT MANAGEMENT</a></li> <!-- Navigation link to Project Management -->
+                <li><a href="SkillsRequired-3.html">SKILLS REQUIRED</a></li> <!-- Navigation link to Skills Required -->
+            </ul>
+        </div> <!-- Ending of the navigation bar -->
+        
+        <div class="centered"> <!-- Starting of the centered content -->
+            <form class="user-info-form"> <!-- Creating a form with class 'user-info-form' -->
+                <label for="first-name">First Name:</label> <!-- Label for first name input -->
+                <input type="text" id="first-name" name="first-name" required> <!-- Text input for first name with required attribute -->
+
+                <label for="last-name">Last Name:</label> <!-- Label for last name input -->
+                <input type="text" id="last-name" name="last-name" required> <!-- Text input for last name with required attribute -->
+
+                <label for="student-email">Student Email:</label> <!-- Label for student email input -->
+                <input type="email" id="student-email" name="student-email" required> <!-- Email input for student email with required attribute -->
+
+                <label for="student-id">Student ID:</label> <!-- Label for student ID input -->
+                <input type="text" id="student-id" name="student-id" required> <!-- Text input for student ID with required attribute -->
+
+                <label for="phone-number">Phone Number:</label> <!-- Label for phone number input -->
+                <input type="tel" id="phone-number" name="phone-number" required> <!-- Tel input for phone number with required attribute -->
+
+                <input type="submit" value="Submit"> <!-- Submit button for the form -->
+            </form> <!-- Ending of the form -->
+        </div> <!-- Ending of the centered content -->
+    </div> <!-- Ending of the banner section -->
+</body> <!-- Ending of the body section -->
+
+</html> <!-- Closing of the HTML document -->

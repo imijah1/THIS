@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif; /* Setting font family for the entire page */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    height: 100vh; /* Setting height to 100 viewport height units */
+    margin: 0; /* Removing default margin */
+}
+
+.user-info-form {
+    max-width: 400px; /* Setting maximum width for the form */
+    padding: 20px; /* Adding padding to the form */
+    border: 2px solid #e8e8f2; /* Adding border with color */
+    border-radius: 10px; /* Adding border radius for rounded corners */
+}
+
+.user-info-form label {
+    color: white; /* Setting text color */
+    text-decoration: none; /* Removing text decoration */
+    color: #f7f0f0; /* Setting text color (repeated line, can be removed) */
+    text-transform: uppercase; /* Transforming text to uppercase */
+    font-weight: bold; /* Setting font weight to bold */
+}
+
+label, input {
+    display: block; /* Displaying as block elements */
+    margin-bottom: 10px; /* Adding margin at the bottom */
+}
+
+input {
+    width: 100%; /* Setting width to 100% */
+    padding: 8px; /* Adding padding */
+    font-size: 16px; /* Setting font size */
+    border: 1px solid #ccc; /* Adding border with color */
+    border-radius: 5px; /* Adding border radius for rounded corners */
+}
+
+input[type="submit"] {
+    background-color: #020bc1; /* Setting background color */
+    color: #fff; /* Setting text color */
+    border: none; /* Removing border */
+    padding: 10px 20px; /* Adding padding */
+    font-size: 16px; /* Setting font size */
+    cursor: pointer; /* Changing cursor on hover */
+    border-radius: 5px; /* Adding border radius for rounded corners */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Changing background color on hover */
+}
+
+*{
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    font-family: sans-serif; /* Setting font family for all elements */
+}
+
+.banner{
+    width: 100%; /* Setting width to 100% */
+    height: 100vh; /* Setting height to 100 viewport height units */
+    background-image: linear-gradient(rgba(4,9,30,0.60),rgba(4,9,30,0.60)),url(Contact-Us_Hero-Image-1-scaled.jpg); /* Setting background image with gradient */
+    background-size: cover; /* Scaling the background image to cover the entire container */
+    background-position: center; /* Positioning the background image at the center */
+}
+
+.navbar{
+    width: 85%; /* Setting width to 85% */
+    margin: auto; /* Centering with auto margin */
+    padding: 35px 0; /* Adding padding */
+    display: flex; /* Using flexbox for layout */
+    align-items: center; /* Aligning items vertically */
+    justify-content: space-between; /* Spacing items evenly */
+}
+
+.logo{
+    width: 100; /* Setting width to 100 (unit missing, should be pixels or percentage) */
+    cursor: pointer; /* Setting cursor style */
+}
+
+.navbar ul li{
+    list-style: none; /* Removing default list style */
+    display: inline-block; /* Displaying as inline block */
+    margin: 0 20px; /* Adding margin */
+    position: relative; /* Setting position to relative */
+}
+
+.navbar ul li a{
+    text-decoration: none; /* Removing text decoration */
+    color: #faf0f0; /* Setting text color */
+    text-transform: uppercase; /* Transforming text to uppercase */
+    text-decoration: none; /* Removing text decoration (repeated line, can be removed) */
+    color: #f7f0f0; /* Setting text color (repeated line, can be removed) */
+    text-transform: uppercase; /* Transforming text to uppercase (repeated line, can be removed) */
+    font-weight: bold; /* Setting font weight to bold */
+}
+
+.navbar ul li::after{
+    content: ''; /* Adding content */
+    height: 3px; /* Setting height */
+    width: 0%; /* Setting initial width to 0% */
+    background: #270091f1; /* Setting background color */
+    position: absolute; /* Setting position to absolute */
+    left: 0; /* Positioning from the left */
+    bottom: -10px; /* Positioning from the bottom */
+    transition: 0.5s; /* Adding transition effect with 0.5 seconds duration */
+}
+
+.navbar ul li:hover::after{
+    width: 100%; /* Changing width to 100% on hover */
+}
+
+.content{
+    width: 100%; /* Setting width to 100% */
+    position: absolute; /* Positioning absolutely */
+    top: 50%; /* Positioning from the top at 50% */
+    transform: translateY(-50%); /* Centering vertically */
+    text-align: center; /* Centering text */
+    color: #fff; /* Setting text color to white */
+}
+
+.content h1{
+    font-size: 70px; /* Setting font size to 70 pixels */
+    margin-top: 80px; /* Adding margin on top */
+}
+
+.content p{
+    margin: 20px auto; /* Setting margin */
+    font-weight: 100; /* Setting font weight */
+    line-height: 25px; /* Setting line height */
+}
